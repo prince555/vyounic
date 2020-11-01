@@ -17,6 +17,7 @@
     <script src="js/modernizr.js"></script>
     <link rel="stylesheet" href="css/nav.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
         .light1.lights{
   display: none;
@@ -39,7 +40,7 @@
     
 
 
- <nav>
+ <nav id="nav">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -57,9 +58,10 @@
         <li class="light1"><a class="lights">light</a></li>
       </ul>
     </nav>
+   
     <main>
 
-        
+         <a href="#nav" class="arrow"><i class="fa fa-arrow-up"></i></a>
 
         <div class="cd-index cd-main-content">
             <div class="heady">
@@ -201,11 +203,11 @@
  $(".lights, .darks").on('click', function () {
     if ($("body").hasClass("dak")) {
       $("body").removeClass("dak");
-      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .aboutbanner, .travels").removeClass("switched");
+      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .aboutbanner, .travels, .arrow").removeClass("switched");
     }
     else {
       $("body").addClass("dak");
-      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .aboutbanner, .travels").addClass("switched");
+      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .aboutbanner, .travels, .arrow").addClass("switched");
     }
   });  
   

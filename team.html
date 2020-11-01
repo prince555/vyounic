@@ -23,7 +23,7 @@
 </head>
 
 <body class="hero-anime2">
-     <nav>
+     <nav id="nav">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -42,6 +42,7 @@
       </ul>
     </nav>
     <main>
+        <a href="#nav" class="arrow"><i class="fa fa-arrow-up"></i></a>
         <div class="cd-londonborn cd-main-content">
             <div class="heady">
                 <div class="logo"><br><br><a class="cd-btn" href="index-2.html#top" ><img src="logo.png" alt="logo" /></a></div>
@@ -244,11 +245,11 @@
   $(".light2, .dark2").on('click', function () {
     if ($("body").hasClass("dak2")) {
       $("body").removeClass("dak2");
-      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .card-title, .card-link").removeClass("switched");
+      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .card-title, .card-link, .arrow").removeClass("switched");
     }
     else {
       $("body").addClass("dak2");
-      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .card-title, .card-link").addClass("switched");
+      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .card-title, .card-link, .arrow").addClass("switched");
     }
   });  
   

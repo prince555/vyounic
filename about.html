@@ -32,7 +32,7 @@
 </head>
 
 <body class="hero-anime">
-     <nav>
+     <nav id="nav">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fas fa-bars"></i>
@@ -51,6 +51,7 @@
       </ul>
     </nav>
     <main>
+        <a href="#nav" class="arrow"><i class="fa fa-arrow-up"></i></a>
         <div class="cd-about cd-main-content">
             <div class="heady">
                 <div class="logo"><br><br><a class="cd-btn" href="index-2.html#top"><img src="logo.png" alt="logo" /></a></div>
@@ -194,11 +195,11 @@ What sets us apart from other student chapters is the passion and dedication wit
  $(".lights, .darks").on('click', function () {
     if ($("body").hasClass("dak")) {
       $("body").removeClass("dak");
-      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .aboutbanner, .travels").removeClass("switched");
+      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .aboutbanner, .travels, .arrow").removeClass("switched");
     }
     else {
       $("body").addClass("dak");
-      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .aboutbanner, .travels").addClass("switched");
+      $(".dark1, .light1, body, .wrapper, .wrapperwork, .leftylink, .rightylink, .skillz, .leftbar, .rightbar, .aboutbanner, .travels, .arrow").addClass("switched");
     }
   });  
   

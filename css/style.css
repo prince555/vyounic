@@ -27,6 +27,9 @@ body {
 body.switched {
   background:#273040;
 }
+body, html{
+  scroll-behavior: smooth;
+}
 
 .group:after {
   content: "";
@@ -3947,4 +3950,19 @@ main .cd-main-content.cd-about {
 nav{
   display: none;
 }
+}
+
+.arrow {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    font-size: 30px;
+    z-index: 9;
+    border: 2px solid;
+    padding: 10px;
+}
+.arrow.switched {
+   color: white;
+   border-color: white;
 }
