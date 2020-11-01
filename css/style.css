@@ -24,6 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body.switched {
+  background:#273040;
+}
+
 .group:after {
   content: "";
   display: table;
@@ -309,6 +313,32 @@ Andy home page
         width: 100%;
 	background:  url(../images/lines.png) top center repeat-y #e7e1e3;
 	background-size: 136%;
+}
+
+.wrapper.switched {
+        width: 100%;
+  background: url(../images/lines.png) top center repeat-y #273040;
+  background-size: 136%;
+}
+.wrapper.switched.contacty {
+        width: 100%;
+  background: url(../images/lines.png) top center repeat-y #273040;
+  background-size: 136%;
+}
+.wrapper.switched.abouter {
+        width: 100%;
+  background: url(../images/lines.png) top center repeat-y #273040;
+  background-size: 136%;
+}
+.wrapper.switched.homery {
+        width: 100%;
+  background: url(../images/lines.png) top center repeat-y #273040;
+  background-size: 136%;
+}
+.wrapperwork.switched {
+        width: 100%;
+  background:  url(../images/lines.png) top center repeat-y #273040;
+  background-size: 136%;
 }
 
 .bannertxt{
@@ -1013,6 +1043,9 @@ bottom: 80px;
     font-family: SofiaPro-bold;
     font-weight: normal;
 }
+.leftylink.switched{
+    color: white;
+}
 .leftylink.act{
 	text-decoration: line-through;
 }
@@ -1026,6 +1059,9 @@ bottom: 80px;
     font-family: SofiaPro-bold;
     font-weight: normal;
 	display: none;
+}
+.rightylink.switched{
+    color: white;
 }
 .rightylink.act{
 	text-decoration: line-through;
@@ -1491,6 +1527,12 @@ width: 100%;
 	font-size: 10vw;
 	letter-spacing: -1px;
 }
+.worktext.switched h3{
+  color:white;
+}
+.worktext.switched p{
+  color:white;
+}
 .worktext p{
 	color: #7c8898;
 	font-family:SofiaPro-Regular;
@@ -1913,7 +1955,7 @@ z-index: 600;
 	position:relative;
     width: 80px;
     height: 80px;
-    top: 50%;
+    top: 20%;
     margin: -40px auto 0;
 	-webkit-animation: spin-1 2s infinite linear;
 	        animation: spin-1 2s infinite linear;
@@ -2198,9 +2240,13 @@ main .cd-main-content.cd-index {
 }
 main .cd-main-content.cd-index > div {
   /* vertically center the content inside the .cd-index */
-  display: table-cell;
+ /* display: table-cell;*/
   vertical-align: middle;
 }
+.heady{
+  display: none;
+}
+
 main .cd-main-content.cd-about {
   display: inherit;
   width: 100%;
@@ -2402,6 +2448,7 @@ QUERY 650px
 	border: #e7e1e3 solid 2px;
 	  border-radius: 50%;
 	box-shadow: inset 0px 0px 40px rgba(0,0,0,.2), 0 0 90px rgba(0,0,0,.8);
+  background-color: #00e5ea;
 }
 
 
@@ -2551,6 +2598,9 @@ QUERY 650px
 	        width: 100%;
 		background: url(../images/lines.png) top center repeat-y #e7e1e3;
 	background-size: 70%;
+}
+.aboutbanner.switched{
+    background: url(../images/lines.png) top center repeat-y #273040;
 }
 .fluiddark.abouty {
   background:#00e5ea;
@@ -3340,6 +3390,9 @@ input[type=submit] {
 	line-height: 35px;
 	margin-top: 30px;
 }
+.travels.switched p{
+  color: white;
+}
 .travels h3{
 	color: #100f15;
 	font-family:SofiaPro-SemiBold;
@@ -3397,6 +3450,9 @@ padding: 0 7% 5%;
 	font-size: 60px;
 	margin-top: 70px;
 	letter-spacing: -1px;
+}
+.travels.switched h3{
+  color: white;
 }
 .abouttext2{
 	padding: 6% 6% 6% 6%;
@@ -3513,6 +3569,9 @@ width: 100%;
 	font-size: 70px;
 	letter-spacing: -1px;
 }
+.worktext.switched h3{
+  color:white;
+}
 .travels h4{
 	    font-family: SofiaPro-Bold;
     margin-top: 15px;
@@ -3543,6 +3602,12 @@ width: 100%;
 	font-weight: normal;
 	font-size: 70px;
 	letter-spacing: -1px;
+}
+.worktext2.switched h3{
+  color: white;
+}
+.worktext2.switched p{
+  color: white;
 }
 .worktext{
 	padding-left: 20px;
@@ -3682,6 +3747,9 @@ width: 33%;
 	line-height: 35px;
 	margin-top: 30px;
 }
+.skillz.switched p{
+  color: white;
+}
 .skillz h3{
 	color: #100f15;
 	font-family:SofiaPro-SemiBold;
@@ -3689,6 +3757,9 @@ width: 33%;
 	font-size: 60px;
 	margin-top: 70px;
 	letter-spacing: -1px;
+}
+.skillz.switched h3{
+  color: white;
 }
 .design{
 	    width: 44%;
@@ -3757,9 +3828,19 @@ padding: 0 7% 15%;
     position: fixed;
     z-index: 11;
 	width: 70px;
-	background-color: #fe4a55;
+/*	background-color: #fe4a55;*/
 	height: 100%;
+            transition: all 0.5s;
 }
+.leftbar.classfinal{
+  background-color: #fe4a55;
+            transition: all 0.5s;
+}
+.leftbar.switched.classfinal{
+  background-color: #1a202b;
+            transition: all 0.5s;
+}
+
 .abouttext h2{
 	color:#100f15;
 	font-family:SofiaPro-SemiBold;
@@ -3783,8 +3864,17 @@ padding: 0 7% 15%;
     position: fixed;
     z-index: 11;
 	width: 70px;
-	background-color: #fe4a55;
+	/*background-color: #fe4a55;*/
 	height: 100%;
+            transition: all 0.5s;
+}
+.rightbar.classfinal{
+  background-color: #fe4a55;
+            transition: all 0.5s;
+}
+.rightbar.switched.classfinal{
+  background-color: #1a202b;
+            transition: all 0.5s;
 }
 .footright{
 text-align: right;
@@ -3835,5 +3925,26 @@ padding: 8% 8%;
 }
 main .cd-main-content.cd-about {
   display: table;
+}
+}
+
+.light1{
+  display: none;
+}
+.light1.switched{
+  display: inline-block;
+}
+.dark1{
+  display: inline-block;
+}
+.dark1.switched{
+  display: none;
+}
+@media (max-width: 870px){
+.heady{
+  display: table-cell;
+}
+nav{
+  display: none;
 }
 }

@@ -442,6 +442,9 @@
  .img-card.iCard-style4 .card-title {
      width: 100%;
      padding: 20px 0px 12px 0;
+     color: #1a202b;
+ }
+ .img-card.iCard-style4 .card-title.switched {
      color: #ffffff;
  }
 
@@ -501,6 +504,10 @@
  }
 
  .img-card.iCard-style4 .card-link a {
+     color: #1a202b;
+ }
+
+  .img-card.iCard-style4 .card-link.switched a {
      color: #ffffff;
  }
 

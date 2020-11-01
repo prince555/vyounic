@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        How to change style of elements  
+        on scroll using jQuery? 
+    </title> 
+  
+    <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+    </script> 
+  
+    <style> 
+        .classinitial { 
+            height: 200px; 
+            background-color: rgba(255, 255, 255, 0.5); 
+            position: fixed; 
+            top: 200; 
+            width: 100%; 
+            transition: all 0.5s; 
+            background-clip: border-box; 
+            border-width: 5px; 
+            border-style: solid; 
+        } 
+  
+        .classinitial.classfinal { 
+            height: 100px; 
+            background-color: rgba(0, 0, 0, 0.8); 
+            position: fixed; 
+            top: 200; 
+            width: 100%; 
+            transition: all 0.5s; 
+            border-width: 8px; 
+            border-style: solid; 
+        } 
+  
+        .wrapper { 
+            height: 2000px; 
+            padding-top: 200px; 
+            color: green; 
+            text-align: center; 
+            font-size: larger; 
+            font-weight: bold; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <header class="classinitial"></header> 
+    <div class="wrapper"> 
+        Geeks For Geeks 
+    </div> 
+  
+    <script> 
+        $(function () { 
+            var header = $(".classinitial"); 
+            $(window).scroll(function () { 
+                var scroll = $(window).scrollTop(); 
+  
+                if (scroll >= 155) { 
+                    header.addClass("classfinal"); 
+                } else { 
+                    header.removeClass("classfinal");
+                } 
+            }); 
+        }); 
+    </script> 
+</body> 
+  
+</html>
