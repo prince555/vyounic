@@ -50,6 +50,17 @@
     background-color: #e7e1e3;
     box-shadow: 0px 0px 115px #000000a6;
 }
+@media (max-width: 870px){
+.heady{
+  display: table-cell;
+}
+nav{
+  display: none;
+}
+.abouttext2{
+  width: 90%;
+}
+}
 
   </style>
 
@@ -81,25 +92,14 @@
                 <div class="logo"><br><br><a class="cd-btn" href="index-2.html#top"><img src="logo.png" alt="logo" /></a></div>
                   <div class="navitems">
                     <div class="navcolumn">
-                        <h2>About</h2>
                        
-                        <a class="cd-btn" href="index-2.html">Home</a>
-                         <p>About Us</p>
-                    </div>
-                    <div class="navcolumn">
-                        <h2>Team</h2>
+                        <a class="cd-btn" href="index.html">Home</a>
+                        <a class="cd-btn" href="about.html">About Us</a>
                         <a class="cd-btn" href="team.html">Our Team</a>
-                    </div>
-
-                    <div class="navcolumn">
-                        <h2>Contact</h2>
+                        <a class="cd-btn" href="services.html">Our Services</a>
                         <a class="cd-btn" href="contact.html">Contact </a>
-                    </div>
-                    <div class="navcolumn">
-                        <h2>Portal</h2>
-                        <p>Events Portal</p>
-                        <a class="cd-btn" href="certification/index.html" >Certification Portal</a>
-                         <a class="cd-btn" href="portal/registration.html" >Registration Portal</a>
+                        <a class="cd-btn darks dark1">Dark </a>
+                        <a class="cd-btn lights light1">light </a>
                     </div>
                 </div>
                 <div class="bubbleback"></div>
@@ -134,14 +134,14 @@
                 <div class="abouttext2" style="margin-top: 100px;">
                     <h2>Login Form</h2>
                     
-                    <form action="index.html">
+                    <form name="login">
     <div class="form-group">
       <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
     </div>
     <div class="form-group">
       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
     </div>
-    <button type="submit" class="btn btn-primary">Login</button><br><br>
+    <button type="submit" class="btn btn-primary" onclick="check(this.form)" value="Login">Login</button><br><br>
    
   </form>
    <div class="form-group col-12">
@@ -205,6 +205,22 @@
   })(jQuery);
 
 </script>
+
+<script language="javascript">
+function check(form)
+{
+ if(form.email.value == "pinnu55" && form.pswd.value == "prince")
+  {
+    window.open('index.html'),
+    window.destroy('login.html')
+  }
+ else
+ {
+   alert("Error Password or Username")
+  }
+}
+</script>
+
 </body>
 
 

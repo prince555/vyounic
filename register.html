@@ -52,6 +52,18 @@
 }
 
   </style>
+  <script type="text/javascript">
+    var check = function() {
+  if (document.getElementById('pass1').value ==
+    document.getElementById('pass2').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+}
+  </script>
 
 </head>
 
@@ -134,21 +146,22 @@
                 <div class="abouttext2" style="margin-top: 100px;">
                     <h2>Registration Form</h2>
                     
-                    <form action="login.html">
+                    <form>
     <div class="form-group">
-      <input type="email" class="form-control" id="email" placeholder="Enter Name" name="email">
+      <input type="" class="form-control" id="email" placeholder="Enter Name" name="email" required>
     </div>
     <div class="form-group">
-      <input type="" class="form-control" id="pwd" placeholder="Enter Email" name="pswd">
+      <input type="email" class="form-control" id="pwd" placeholder="Enter Email" name="pswd" required>
     </div>
     <div class="form-group">
-      <input type="" class="form-control" id="pwd" placeholder="Enter Phone Number" name="pswd">
+      <input class="form-control" id="pwd" placeholder="Enter Phone Number" type="number" name="country_code" minlength="10" maxlength="10" required>
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      <input type="password" class="form-control" id="pass1" placeholder="Enter password"  name="pswd" minlength="8" required onkeyup='check();'>
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" id="pwd" placeholder="Conform password" name="pswd">
+      <span id='message'></span>
+      <input type="password" class="form-control" id="pass2" placeholder="Conform password" name="pswd" required onkeyup='check();'>
     </div>
     <button type="submit" class="btn btn-primary">Register</button>
   </form>

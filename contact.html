@@ -14,6 +14,42 @@
     <script src="js/modernizr.js"></script> 
     <link rel="stylesheet" href="css/nav.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+      .form-control {
+    display: block;
+    width: 100%;
+    padding: 100px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: 2.375rem 2.375rem 2.375rem 2.375rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn{
+    font-size: 20px;
+}
+
+.abouttext2{
+    padding: 6% 6% 6% 6%;
+    width: 50%;
+    z-index: 4;
+    position: relative;
+    margin: 0 auto 10%;
+    background-color: #e7e1e3;
+    box-shadow: 0px 0px 115px #000000a6;
+}
+
+  </style>
 </head>
 
 <body class="hero-anime">
@@ -30,7 +66,7 @@
         <li><a href="events.html">Events</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a class="active" href="contact.html">Contact</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="login.html">Logout</a></li>
         <li class="dark1"><a class="dark">Dark</a></li>
         <li class="light1"><a class="light">light</a></li>
       </ul>
@@ -42,24 +78,15 @@
                 <div class="logo"><br><br><a class="cd-btn" href="index-2.html#top" ><img src="logo.png" alt="logo" /></a></div>
                 <div class="navitems">
                     <div class="navcolumn">
-                        <h2>About</h2>
-                        <a class="cd-btn" href="index-2.html" >Home</a>
-                        <a class="cd-btn" href="about.html#top" >About Us</a>
-                    </div>
-                    <div class="navcolumn">
-                        <h2>Team</h2>
-                        <a class="cd-btn" href="team.html" >Our Team</a>
-                    </div>
-
-                    <div class="navcolumn">
-                        <h2>Contact</h2>
-                        <p>Contact Us</p>
-                    </div>
-                    <div class="navcolumn">
-                        <h2>Portal</h2>
-                        <p>Events Portal</p>
-                        <a class="cd-btn" href="certification/index.html" >Certification Portal</a>
-                      <a class="cd-btn" href="portal/registration.html" >Registration Portal</a>
+                       
+                        <a class="cd-btn" href="index.html">Home</a>
+                        <a class="cd-btn" href="about.html">About Us</a>
+                        <a class="cd-btn" href="team.html">Our Team</a>
+                        <a class="cd-btn" href="services.html">Our Services</a>
+                        <a class="cd-btn" href="contact.html">Contact </a>
+                         <a class="cd-btn" href="login.html">Logout </a>
+                        <a class="cd-btn darks dark1">Dark </a>
+                        <a class="cd-btn lights light1">light </a>
                     </div>
                 </div>
                 <div class="bubbleback"></div>
@@ -137,6 +164,26 @@
                    <a href="https://www.facebook.com/profile.php?id=100008762976918" target="_blank"><img src="icon/youtube.png" style="width:25px;height:25px;" /></a>&nbsp;
          
                         </div>
+
+                        
+                    <p style="font-size: 30px;">Feedback Form</p>
+                    
+                    <form>
+    <div class="form-group">
+      <input type="" class="form-control" id="email" placeholder="Enter Name" name="email" required>
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="pwd" placeholder="Enter Email" name="pswd" required>
+    </div>
+    <div class="form-group">
+      <input class="form-control" id="pwd" placeholder="Enter Phone Number" type="number" name="country_code" minlength="10" maxlength="10" required>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" placeholder="Your Feedback" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+
                         
                         
                         <br>
